@@ -20,7 +20,7 @@ Assets, or resources used
 ## Future Development
 
 # Created by: Group Name
-- Mark Ribaudo:
-- Anurag Gotety:
+- Mark Ribaudo: Project Management/Assets
+- Anurag Gotety: Scripting
 - Cade Low:
 - Kyle Klingaman: 
