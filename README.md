@@ -2,7 +2,7 @@
 MSCH-C220 Game Jam, December 2020
 
 ## Theme
-How you thought about or interpreted the theme
+- The player is 'under pressure' in a coal mine to escape to the next levels before the time (or some physical obstacle) runs out and collect diamonds (part of the under pressure theme) to earn score.
 
 ## Game Play
 Objective
@@ -12,15 +12,16 @@ Game-play instructions
 Struggles or surprises you encountered during the development of the game
 
 ## Implementation
-Features
-Assets, or resources used
+- Player/Potential Tileset/Enemies: https://opengameart.org/content/treasure-hunter-game-assets
+- Diamonds/Other collectibles: https://opengameart.org/content/minery-icons
+
 
 ## References
 
 ## Future Development
 
 # Created by: Group Name
-- Mark Ribaudo:
-- Anurag Gotety:
-- Cade Low:
-- Kyle Klingaman: 
+- Mark Ribaudo: Project Management/Finding or Creating Assets
+- Anurag Gotety: Scripting/Finding Assets
+- Cade Low: TBD
+- Kyle Klingaman: Scripting/Finding Assets
