@@ -1,4 +1,6 @@
-# Project Name
+# MACK
+
+## Final Project
 MSCH-C220 Game Jam, December 2020
 
 ## Theme
