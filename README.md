@@ -2,7 +2,7 @@
 MSCH-C220 Game Jam, December 2020
 
 ## Theme
-How you thought about or interpreted the theme
+- The player is 'under pressure' in a coal mine to escape to the next levels before the time (or some physical obstacle) runs out and collect diamonds (part of the under pressure theme) to earn score.
 
 ## Game Play
 Objective
@@ -21,7 +21,7 @@ Struggles or surprises you encountered during the development of the game
 ## Future Development
 
 # Created by: Group Name
-- Mark Ribaudo: Project Management/Assets
-- Anurag Gotety: Scripting/Assets
+- Mark Ribaudo: Project Management/Finding or Creating Assets
+- Anurag Gotety: Scripting/Finding Assets
 - Cade Low: TBD
-- Kyle Klingaman: Scripting/Assets
+- Kyle Klingaman: Scripting/Finding Assets
