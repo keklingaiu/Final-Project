@@ -1,4 +1,6 @@
-# Project Name
+# MACK
+
+## Final Project
 MSCH-C220 Game Jam, December 2020
 
 ## Theme
@@ -20,8 +22,8 @@ Struggles or surprises you encountered during the development of the game
 
 ## Future Development
 
-# Created by: Group Name
+# Created by: MACK
 - Mark Ribaudo: Project Management/Finding or Creating Assets
 - Anurag Gotety: Scripting/Finding Assets
-- Cade Low: TBD
+- Cade Low: Scripting/Finding Assets
 - Kyle Klingaman: Scripting/Finding Assets
