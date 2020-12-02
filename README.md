@@ -12,8 +12,9 @@ Game-play instructions
 Struggles or surprises you encountered during the development of the game
 
 ## Implementation
-Features
-Assets, or resources used
+- Player/Potential Tileset/Enemies: https://opengameart.org/content/treasure-hunter-game-assets
+- Diamonds/Other collectibles: https://opengameart.org/content/minery-icons
+
 
 ## References
 
