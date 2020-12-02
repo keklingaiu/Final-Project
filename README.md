@@ -21,6 +21,6 @@ Assets, or resources used
 
 # Created by: Group Name
 - Mark Ribaudo: Project Management/Assets
-- Anurag Gotety: Scripting
-- Cade Low:
-- Kyle Klingaman: 
+- Anurag Gotety: Scripting/Assets
+- Cade Low: TBD
+- Kyle Klingaman: Scripting/Assets
