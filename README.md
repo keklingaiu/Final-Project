@@ -23,5 +23,5 @@ Struggles or surprises you encountered during the development of the game
 # Created by: Group Name
 - Mark Ribaudo: Project Management/Finding or Creating Assets
 - Anurag Gotety: Scripting/Finding Assets
-- Cade Low: TBD
+- Cade Low: Scripting/Finding Assets
 - Kyle Klingaman: Scripting/Finding Assets
