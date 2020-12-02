@@ -15,13 +15,8 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Final Project"
+config/name="Project Template"
 config/icon="res://icon.png"
-
-[display]
-
-window/size/width=800
-window/size/height=1024
 
 [rendering]
 
