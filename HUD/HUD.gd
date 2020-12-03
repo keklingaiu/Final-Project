@@ -1,25 +1,22 @@
 extends Control
 
 
-#onready var global = get_node("/root/Global")
+onready var global = get_node("/root/Global")
 
 func _ready():
 	update_score(0)
 	update_lives(0)
+	Global.update_time()
 	
-
-
+	
 func update_score(s):
-	Global.score += s
-	$Score.text = "Score:" + str(Global.score)
+	global.score += s
+	$Score.text = "Score: " + str(global.score)
 	
-
-
-func update_lives(s):
-	Global.lives+= s
-	$Lives.text = "Lives: " + str(Global.lives)
-	if Global.lives <= 0:
-		queue_free()
-		
-
-
+	
+func update_lives(l):
+	global.lives += l
+	$Lives.text = "Lives: " + str(global.lives)
+	if global.lives <= 0:
+		#get_tree().change_scene("res://Menu/GameOver.tscn")
+		pass

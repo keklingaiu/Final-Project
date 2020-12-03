@@ -6,6 +6,8 @@ onready var VP = get_viewport_rect()
 #onready var global = get_node("/root/Global")
 #onready var HUD = get_node("/root/Game/CanvasLayer/HUD")
 
+onready var HUD = get_node("/root/Game/UI/HUD")
+
 
 
 var velocity = Vector2.ZERO
@@ -37,9 +39,6 @@ func _physics_process(_delta):
 	if direction < 0 and not $AnimatedSprite.flip_h: $AnimatedSprite.flip_h = true
 	if direction > 0 and $AnimatedSprite.flip_h: $AnimatedSprite.flip_h = false
 	
-#	if position.y > Global.death_zone:
-#		HUD.update_lives(-1)
-#		queue_free()
 	
 		
 
@@ -63,8 +62,9 @@ func set_animation(anim):
 	else: $AnimatedSprite.play()
 
 func die():
-#	HUD.update_lives(-1)
+	HUD.update_lives(-1)
 	queue_free()
+	
 
 
 

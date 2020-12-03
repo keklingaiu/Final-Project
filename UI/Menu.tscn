@@ -1,0 +1,101 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://UI/Menu.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Kenney Blocks.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assets/Kenney Future.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Assets/Jewel2_Blue_Animation/Jewel2 blue_Animation 1_2.png" type="Texture" id=4]
+[ext_resource path="res://Assets/bg_image.jpg" type="Texture" id=5]
+[ext_resource path="res://Assets/Jewel2_Blue_Animation/Jewel2 blue_Animation 1_3.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Jewel2_Blue_Animation/Jewel2 blue_Animation 1_0.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Jewel2_Blue_Animation/Jewel2 blue_Animation 1_1.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Jewel2_Blue_Animation/Jewel2 blue_Animation 1_5.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Jewel2_Blue_Animation/Jewel2 blue_Animation 1_4.png" type="Texture" id=10]
+
+[sub_resource type="DynamicFont" id=1]
+size = 80
+extra_spacing_char = 4
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 150
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 150
+font_data = ExtResource( 3 )
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 4 ), ExtResource( 6 ), ExtResource( 10 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "default",
+"speed": 7.0
+} ]
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 449.366, 425.678 )
+scale = Vector2( 0.460854, 0.617585 )
+texture = ExtResource( 5 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.627451 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = -356.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.105882, 0.776471, 0.807843, 1 )
+text = "Diam   nd 
+Dash"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Play" type="Button" parent="."]
+margin_left = 332.0
+margin_top = 434.0
+margin_right = 1832.0
+margin_bottom = 1134.0
+rect_scale = Vector2( 0.15, 0.15 )
+custom_fonts/font = SubResource( 2 )
+text = "Play"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quit" type="Button" parent="."]
+margin_left = 332.0
+margin_top = 580.0
+margin_right = 1832.0
+margin_bottom = 1280.0
+rect_scale = Vector2( 0.15, 0.15 )
+custom_fonts/font = SubResource( 3 )
+text = "Quit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 516.542, 193.747 )
+scale = Vector2( 2.92982, 3.36439 )
+frames = SubResource( 5 )
+playing = true
+[connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]

@@ -1,0 +1,104 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://UI/Game_Over.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Kenney Future.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assets/bg_image.jpg" type="Texture" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 500
+outline_size = 25
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 300
+outline_size = 25
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 170
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 170
+font_data = ExtResource( 2 )
+
+[node name="Game_Over" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 450.427, 424.618 )
+scale = Vector2( 0.462672, 0.61707 )
+texture = ExtResource( 3 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 1, 0.2, 0, 0.419608 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 3595.0
+margin_bottom = 1499.0
+rect_scale = Vector2( 0.2, 0.2 )
+custom_fonts/font = SubResource( 1 )
+text = "You died :("
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 2.12134
+margin_top = 184.508
+margin_right = 8084.12
+margin_bottom = 2814.51
+rect_scale = Vector2( 0.1, 0.1 )
+custom_fonts/font = SubResource( 2 )
+text = "Your final score was: "
+align = 1
+valign = 1
+autowrap = true
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Play_again" type="Button" parent="."]
+margin_left = 346.0
+margin_top = 484.0
+margin_right = 2246.0
+margin_bottom = 1299.0
+rect_scale = Vector2( 0.1, 0.1 )
+custom_fonts/font = SubResource( 3 )
+text = "Play again?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quit" type="Button" parent="."]
+margin_left = 346.0
+margin_top = 600.0
+margin_right = 2246.0
+margin_bottom = 1415.0
+rect_scale = Vector2( 0.1, 0.1 )
+custom_fonts/font = SubResource( 4 )
+text = "Quit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Play_again" to="." method="_on_Play_again_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]

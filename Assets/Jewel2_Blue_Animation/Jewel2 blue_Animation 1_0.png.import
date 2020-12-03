@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/spritesheet_items.png-b00a6342b705794dfe2ab3fecdf81188.stex"
+path="res://.import/Jewel2 blue_Animation 1_0.png-d1ce455c22c4b95514733df31a9d0485.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Platformer spritesheets/spritesheet_items.png"
-dest_files=[ "res://.import/spritesheet_items.png-b00a6342b705794dfe2ab3fecdf81188.stex" ]
+source_file="res://Assets/Jewel2_Blue_Animation/Jewel2 blue_Animation 1_0.png"
+dest_files=[ "res://.import/Jewel2 blue_Animation 1_0.png-d1ce455c22c4b95514733df31a9d0485.stex" ]
 
 [params]
 

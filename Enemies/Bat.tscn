@@ -3,50 +3,59 @@
 [ext_resource path="res://Enemies/Bat.gd" type="Script" id=1]
 [ext_resource path="res://Assets/bat.png" type="Texture" id=2]
 
-[sub_resource type="AtlasTexture" id=3]
+[sub_resource type="AtlasTexture" id=1]
 flags = 4
 atlas = ExtResource( 2 )
 region = Rect2( 0, 0, 48, 48 )
 
-[sub_resource type="AtlasTexture" id=4]
+[sub_resource type="AtlasTexture" id=2]
 flags = 4
 atlas = ExtResource( 2 )
 region = Rect2( 48, 0, 48, 48 )
 
-[sub_resource type="AtlasTexture" id=5]
+[sub_resource type="AtlasTexture" id=3]
 flags = 4
 atlas = ExtResource( 2 )
 region = Rect2( 96, 0, 48, 48 )
 
-[sub_resource type="SpriteFrames" id=6]
+[sub_resource type="SpriteFrames" id=4]
 animations = [ {
-"frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 4 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 4 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 4 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 4 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 4 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 4 ), SubResource( 3 ) ],
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ) ],
 "loop": true,
 "name": "default",
 "speed": 12.0
 } ]
 
-[sub_resource type="CircleShape2D" id=7]
+[sub_resource type="CircleShape2D" id=5]
+radius = 18.7698
 
 [node name="Bat" type="KinematicBody2D"]
+position = Vector2( 360.625, 330.926 )
 script = ExtResource( 1 )
+speed = 30
+looking_speed = 15
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-frames = SubResource( 6 )
-frame = 24
+frames = SubResource( 4 )
+frame = 1
 playing = true
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
+enabled = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -0.561226, -2.52554 )
+position = Vector2( 0.852951, -1.11132 )
 scale = Vector2( 0.833084, 0.833084 )
-shape = SubResource( 7 )
+shape = SubResource( 5 )
 
 [node name="Area2D" type="Area2D" parent="."]
+position = Vector2( -0.707092, -0.707031 )
+__meta__ = {
+"_edit_group_": true
+}
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( -0.561226, -2.52554 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 0.499451, -0.0506859 )
 scale = Vector2( 0.833084, 0.833084 )
-shape = SubResource( 7 )
+shape = SubResource( 5 )
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
