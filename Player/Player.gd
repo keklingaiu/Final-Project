@@ -7,6 +7,7 @@ onready var VP = get_viewport_rect()
 #onready var HUD = get_node("/root/Game/CanvasLayer/HUD")
 
 
+
 var velocity = Vector2.ZERO
 var jump_power = Vector2.ZERO
 var direction = 1
@@ -39,6 +40,7 @@ func _physics_process(_delta):
 #	if position.y > Global.death_zone:
 #		HUD.update_lives(-1)
 #		queue_free()
+	
 		
 
 func is_moving():
