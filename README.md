@@ -24,6 +24,6 @@ Struggles or surprises you encountered during the development of the game
 
 # Created by: MACK
 - Mark Ribaudo: Project Management/Finding or Creating Assets
-- Anurag Gotety: Scripting/Finding Assets
-- Cade Low: Scripting/Finding Assets
-- Kyle Klingaman: Scripting/Finding Assets
+- Anurag Gotety: Scripting Enemies/Score/Lives and Finding Assets
+- Cade Low: Creating Menu screen/Win or Lose screens/Scripting
+- Kyle Klingaman: Scripting/Finding Assets/Level Design
