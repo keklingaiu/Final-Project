@@ -7,7 +7,7 @@ var velocity = Vector2.ZERO
 var speed = .3
 var dead = false
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	if direction < 0 and !$Sprite.flip_h:
 		$Sprite.flip_h = true
 	if not dead:

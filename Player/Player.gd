@@ -43,7 +43,7 @@ func _physics_process(_delta):
 	if Input.is_action_just_pressed("attack"):
 		var attack = Attack.instance()
 		attack.position = position
-		attack.position.x += 10 * direction
+		attack.position.x += 20 * direction
 		attack.direction = direction
 		get_node("/root/Game/Attack_Container").add_child(attack)
 		
