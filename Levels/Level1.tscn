@@ -82,3 +82,18 @@ script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Score" type="Label" parent="HUD"]
+margin_right = 40.0
+margin_bottom = 14.0
+rect_scale = Vector2( 2.26199, 2.26199 )
+text = "Score: "
+
+[node name="Lives" type="Label" parent="HUD"]
+margin_left = 480.414
+margin_top = 3.3674
+margin_right = 520.414
+margin_bottom = 34.3674
+rect_scale = Vector2( 2.26199, 2.26199 )
+text = "Lives:
+ "
