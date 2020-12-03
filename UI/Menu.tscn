@@ -1,7 +1,7 @@
 [gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://UI/Menu.gd" type="Script" id=1]
-[ext_resource path="res://Assets/Kenney Blocks.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assets/Minecraft.Alt.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Assets/Kenney Future.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Assets/Jewel2_Blue_Animation/Jewel2 blue_Animation 1_2.png" type="Texture" id=4]
 [ext_resource path="res://Assets/bg_image.jpg" type="Texture" id=5]
@@ -59,7 +59,7 @@ anchor_bottom = 1.0
 margin_bottom = -356.0
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.105882, 0.776471, 0.807843, 1 )
-text = "Diam   nd 
+text = "Diam  nd 
 Dash"
 align = 1
 valign = 1
@@ -69,9 +69,9 @@ __meta__ = {
 }
 
 [node name="Play" type="Button" parent="."]
-margin_left = 332.0
+margin_left = 339.0
 margin_top = 434.0
-margin_right = 1832.0
+margin_right = 1839.0
 margin_bottom = 1134.0
 rect_scale = Vector2( 0.15, 0.15 )
 custom_fonts/font = SubResource( 2 )
@@ -81,9 +81,9 @@ __meta__ = {
 }
 
 [node name="Quit" type="Button" parent="."]
-margin_left = 332.0
+margin_left = 339.0
 margin_top = 580.0
-margin_right = 1832.0
+margin_right = 1839.0
 margin_bottom = 1280.0
 rect_scale = Vector2( 0.15, 0.15 )
 custom_fonts/font = SubResource( 3 )
@@ -93,10 +93,10 @@ __meta__ = {
 }
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 516.542, 193.747 )
+position = Vector2( 493.208, 192.333 )
 scale = Vector2( 2.92982, 3.36439 )
 frames = SubResource( 4 )
-frame = 3
+frame = 4
 playing = true
 [connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]
