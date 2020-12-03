@@ -13,6 +13,7 @@ MSCH-C220 Game Jam, December 3 2020
   - Use 'A' to move left
   - Use 'D' to move right
   - Use 'W' to jump
+  - Use 'Space' to throw a bomb at the enemies
   - Clicking the 'Play' button on any menu screen resets the level back to the beginning
   - Clicking the 'Quit' button on any menu screen will close the game
   - Collect all the diamonds by colliding with them
