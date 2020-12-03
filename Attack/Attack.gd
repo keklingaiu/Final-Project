@@ -22,6 +22,7 @@ func _on_Attack_body_entered(body):
 			var explosion = Explosion.instance()
 			explosion.position = position
 			get_node("/root/Game/Explosions").add_child(explosion)
+			explosion.get_node("Explosion").playing = true
 			explosion.get_node("AnimatedSprite").play()
 		dead = true
 	queue_free()
