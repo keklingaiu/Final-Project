@@ -24,7 +24,7 @@ font_data = ExtResource( 3 )
 size = 150
 font_data = ExtResource( 3 )
 
-[sub_resource type="SpriteFrames" id=5]
+[sub_resource type="SpriteFrames" id=4]
 animations = [ {
 "frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 4 ), ExtResource( 6 ), ExtResource( 10 ), ExtResource( 9 ) ],
 "loop": true,
@@ -95,7 +95,8 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 516.542, 193.747 )
 scale = Vector2( 2.92982, 3.36439 )
-frames = SubResource( 5 )
+frames = SubResource( 4 )
+frame = 3
 playing = true
 [connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]

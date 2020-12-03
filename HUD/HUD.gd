@@ -18,5 +18,4 @@ func update_lives(l):
 	global.lives += l
 	$Lives.text = "Lives: " + str(global.lives)
 	if global.lives <= 0:
-		#get_tree().change_scene("res://Menu/GameOver.tscn")
-		pass
+		get_tree().change_scene("res://UI/Game_Over.tscn")

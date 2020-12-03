@@ -419,7 +419,7 @@ polygon = PoolVector2Array( -8.34931, -8.09134, 8.15069, -9.09134, 8.15069, 7.40
 script = ExtResource( 6 )
 
 [node name="Player" parent="Player_Container" instance=ExtResource( 5 )]
-position = Vector2( 355.341, 704.605 )
+position = Vector2( 19.6873, 65.2958 )
 
 [node name="Platform" type="TileMap" parent="."]
 tile_set = SubResource( 12 )
@@ -509,7 +509,6 @@ autostart = true
 zoom = Vector2( 0.5, 0.4 )
 
 [node name="Bat_Container" type="Node2D" parent="."]
-visible = false
 
 [node name="Bat" parent="Bat_Container" instance=ExtResource( 10 )]
 position = Vector2( 563.937, 71.7157 )
