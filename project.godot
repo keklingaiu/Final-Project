@@ -15,12 +15,6 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Project Template"
-config/icon="res://icon.png"
-
-[autoload]
-
-Global="*res://Global.gd"
 
 [rendering]
 

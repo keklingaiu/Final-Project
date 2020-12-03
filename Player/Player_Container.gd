@@ -1,7 +1,7 @@
 extends Node2D
 
 onready var Player = load("res://Player/Player.tscn")
-onready var respawn = get_node("/root/Game/Player_Container/Backup_Camera")
+onready var respawn = get_node("/root/Game/Spawn")
 
 
 
