@@ -19,10 +19,6 @@ config/name="Project Template"
 run/main_scene="res://Levels/Level1.tscn"
 config/icon="res://icon.png"
 
-[autoload]
-
-Global="*res://Global.gd"
-
 [display]
 
 window/size/width=900
