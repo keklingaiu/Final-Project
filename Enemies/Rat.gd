@@ -11,7 +11,7 @@ export var max_constraint = 100
 export var min_constraint = -100
 
 
-onready var Explosion = load("res://Explosions/Explosion.tscn")
+#onready var Explosion = load("res://Explosions/Explosion.tscn")
 	
 func _physics_process(_delta):
 	if direction < 0 and !$AlienSprite.flip_h:

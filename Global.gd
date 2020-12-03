@@ -2,17 +2,17 @@ extends Node
 
 var lives = 3
 var score = 0
-onready var HUD = get_node("/root/Game/HUD")
+onready var HUD = get_node("/root/Game/UI/HUD")
 
 
 
 func increase_score(s):
 	score += s
-	HUD = get_node("/root/Game/HUD")
+	HUD = get_node("/root/Game/UI/HUD")
 	HUD.update_score(s)
 	
 	
 func increase_lives(l):
 	lives += l
-	HUD = get_node("/root/Game/HUD")
+	HUD = get_node("/root/Game/UI/HUD")
 	HUD.update_lives(l)
