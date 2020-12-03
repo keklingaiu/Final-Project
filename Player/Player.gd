@@ -7,6 +7,7 @@ onready var VP = get_viewport_rect()
 #onready var HUD = get_node("/root/Game/CanvasLayer/HUD")
 
 onready var HUD = get_node("/root/Game/UI/HUD")
+onready var Attack = load("res://Attack/Attack.tscn")
 
 
 
@@ -39,7 +40,12 @@ func _physics_process(_delta):
 	if direction < 0 and not $AnimatedSprite.flip_h: $AnimatedSprite.flip_h = true
 	if direction > 0 and $AnimatedSprite.flip_h: $AnimatedSprite.flip_h = false
 	
-	
+	if Input.is_action_just_pressed("attack"):
+		var attack = Attack.instance()
+		attack.position = position
+		attack.position.x += 10 * direction
+		attack.direction = direction
+		get_node("/root/Game/Attack_Container").add_child(attack)
 		
 
 func is_moving():

@@ -24,3 +24,6 @@ func _on_Area2D_body_entered(body):
 	if body.name == "Player":
 		body.die()
 		queue_free()
+		
+func die():
+	queue_free()
