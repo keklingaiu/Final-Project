@@ -32,16 +32,16 @@ radius = 18.7698
 [node name="Bat" type="KinematicBody2D"]
 position = Vector2( 360.625, 330.926 )
 script = ExtResource( 1 )
-speed = 30
-looking_speed = 15
+speed = 25
+looking_speed = 5
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 4 )
-frame = 1
 playing = true
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
 enabled = true
+cast_to = Vector2( 0, 20 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0.852951, -1.11132 )
