@@ -19,6 +19,7 @@ MSCH-C220 Game Jam, December 3 2020
   - Collect all the diamonds by colliding with them
   - You lose a life if the enemies touch you
   - You lose if you run out of lives, or if the time runs out
+  - Collect helmets to gain an additional life
 
 ## Impediments
 - The main struggle was working with GitHub and allowing us all to access the files to work on them. 
@@ -33,8 +34,8 @@ MSCH-C220 Game Jam, December 3 2020
 - Lava: https://opengameart.org/content/2d-four-seasons-platformer-tileset-16x16
 - Rat: https://kenney.nl/assets/platformer-art-extended-enemies
 - Buttons are default with the game engine
-- Text: TBD & https://kenney.nl/assets/kenney-fonts
-- 
+- Text: https://fontlibrary.org/en/font/minecraft with License CC-BY-SA made by RomiloPlays & https://kenney.nl/assets/kenney-fonts
+- Helmet: https://opengameart.org/content/minery-icons
 
 ## References
 
