@@ -33,8 +33,8 @@ MSCH-C220 Game Jam, December 3 2020
 - Lava: https://opengameart.org/content/2d-four-seasons-platformer-tileset-16x16
 - Rat: https://kenney.nl/assets/platformer-art-extended-enemies
 - Buttons are default with the game engine
-- Text: TBD & https://kenney.nl/assets/kenney-fonts
-- 
+- Text: [https://fontlibrary.org/en/font/minecraft with a License of CC-BY-SA by RomiloPlays] & https://kenney.nl/assets/kenney-fonts
+- Explosion Sound: https://opengameart.org/content/explosion-0
 
 ## References
 
